@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "glossy-tools",
+	"version": "${version}",
+	"name": "Glossy tools",
+	"description": "Glossy mod, made in sprouts of boredom called creativity",
+	"authors": [
+		"Kyusi.css"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/glossy-tools/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.glossy.tools.GlossyTools"
+		],
+		"client": [
+			"net.glossy.tools.GlossyToolsClient"
+		],
+		"fabric-datagen": [
+			"net.glossy.tools.GlossyToolsDataGenerator"
+		]
+	},
+	"mixins": [
+		"glossy-tools.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
